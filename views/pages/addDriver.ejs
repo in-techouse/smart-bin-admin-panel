@@ -1,1 +1,69 @@
 <% extend ('../layout')%>
+<div class="panel form-element-padding">
+    <div class="panel-heading">
+        <h4>Add New Driver</h4>
+    </div>
+    <div class="panel-body" style="padding-bottom:30px;">
+        <div class="col-md-12">
+            <form method="POST" action="/admin/addDriver">
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label text-right">Driver Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="driverName" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label text-right">Driver Phone Number </label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" name="driverPhoneNumber" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label text-right">Driver Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" name="driverEmail" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label text-right">Driver pasword</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" name="driverPasword" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label text-right">Driver Lisence Number</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="driverLisenceNumber" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <br>
+                    <%if(error!=""){ %>
+                    <div class="form-group form-success-gone">
+                        <div class="alert alert-danger">
+                            <%- error%>
+    
+                        </div>
+    
+    
+                    </div>
+                    <% } %>
+                </div>
+
+
+                <div class="form-group">
+                    <input type="submit" class="btn btn-block btn-primary" value="SAVE DRIVER">
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+</div>

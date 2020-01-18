@@ -7,7 +7,24 @@ router.get('/',function(req,res){
 });
 
 router.get('/addDriver',function(req,res){
-    res.render("pages/addDriver")
+    res.render("pages/addDriver", {error: ""});
+});
+router.post('/addDriver',function(req,res){
+    // res.render("pages/addDriver")
+    // res.json(req.body);
+    // let id = firebase.database().ref().child
+    firebase
+    .auth()
+    .createUserWithEmailAndPassword(req.body.driverEmail, req.body.driverPasword)
+    .then(user =>{
+        res.json(user);
+    })
+    .catch(error=>{
+        res.render("pages/addDriver",{
+            error: error.message,
+            action: "signup" 
+        });
+    });
 });
 
 router.get('/addTruck',function(req,res){

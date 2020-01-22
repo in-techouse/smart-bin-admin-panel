@@ -1,1 +1,56 @@
 <% extend ('../layout')%>
+
+
+<div class="row" style="padding: 20px;">
+    <div class="col-md-6">
+        <div class="panel box-v1">
+            <div class="panel-heading bg-white border-none">
+                <div class="col-md-12 text-left padding-0">
+                    <h1 class="text-left">Truck Details</h1>
+                </div>
+
+            </div>
+            <div class="panel-body text-left">
+                <h3>Truck ID</h3>
+                <h4> <%= truck.val().id%></h4>
+                <hr />
+                <h3>Registration Number</h3>
+                <h4> <%= truck.val().registrationNumber%></h4>
+                <hr />
+                <h3>Capacity</h3>
+                <h4> <%= truck.val().truckCapacity%></h4>
+                <hr />
+                <h3>Model</h3>
+                <h4> <%= truck.val().truckModel%></h4>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6" style="padding-right: 10px;">
+        <div class="panel box-v1">
+            <div class="panel-heading bg-white border-none">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-left padding-0">
+                    <h1 class="text-left">Driver Details</h1>
+                </div>
+
+            </div>
+            <div class="panel-body text-left" style="padding-top: 10px ;">
+                <h3>Name</h3>
+                <h4> <%= driver.val().name%></h4>
+                <hr />
+                <h3>Driver ID</h3>
+                <h4> <%= driver.val().id%></h4>
+                <hr />
+                <h3>Email</h3>
+                <h4> <%= driver.val().email%></h4>
+                <hr />
+                <h3>Lisence Number</h3>
+                <h4> <%= driver.val().lisenceNumber%></h4>
+                <hr />
+                <h3>Phone Number</h3>
+                <h4> <%= driver.val().phoneNumber%></h4>
+
+            </div>
+        </div>
+    </div>
+</div>

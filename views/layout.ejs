@@ -14,6 +14,10 @@
   <link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
 
   <!-- plugins -->
+  <link rel="stylesheet" type="text/css" href="/public/css/plugins/datatables.bootstrap.min.css" />
+  <!-- end: Css -->
+
+  <!-- plugins -->
   <link rel="stylesheet" type="text/css" href="/public/css/plugins/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="/public/css/plugins/simple-line-icons.css" />
   <link rel="stylesheet" type="text/css" href="/public/css/plugins/animate.min.css" />
@@ -32,6 +36,22 @@
 
     <!-- start: Content -->
     <div id="content">
+      <div class="panel">
+        <div class="panel-body">
+          <div class="col-md-12 col-sm-12">
+            <h3 class="animated fadeInLeft">SMART BIN, ADMIN DASHBOARD</h3>
+            <p class="animated fadeInDown"><span class="fa  fa-map-marker"></span> Lahore, Pakistan</p>
+
+            <ul class="nav navbar-nav">
+              <li><a href="/admin/allusers">USERS</a></li>
+              <li><a href="/admin/allDrivers">DRIVERS</a></li>
+              <li><a href="/admin/allTrucks">TRUCKS</a></li>
+              <li><a href="/admin/addDriver">NEW DRIVER</a></li>
+              <li><a href="/admin/addTruck">NEW TRUCK</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <%- content %>
     </div>
   </div>
@@ -45,6 +65,8 @@
   <!-- plugins -->
   <script src="/public/js/plugins/moment.min.js"></script>
   <script src="/public/js/plugins/fullcalendar.min.js"></script>
+  <script src="/public/js/plugins/jquery.datatables.min.js"></script>
+  <script src="/public/js/plugins/datatables.bootstrap.min.js"></script>
   <script src="/public/js/plugins/jquery.nicescroll.js"></script>
   <script src="/public/js/plugins/jquery.vmap.min.js"></script>
   <script src="/public/js/plugins/maps/jquery.vmap.world.js"></script>
@@ -54,6 +76,8 @@
 
   <!-- custom -->
   <script src="/public/js/main.js"></script>
+  <script src="/public/js/mainScript.js"></script>
+
   <script type="text/javascript">
     (function (jQuery) {
 

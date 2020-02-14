@@ -1,11 +1,8 @@
 <% extend ('../auth_layout')%>
 <div class="container">
-
   <form action="/login" method="POST" class="form-signin">
     <div class="panel periodic-login">
       <div class="panel-body text-center">
-
-
         <i class="icons icon-arrow-down"></i>
         <div class="form-group form-animate-text" style="margin-top:40px !important;">
           <input type="email" class="form-text" required name="email">
@@ -22,10 +19,7 @@
         <div class="form-group form-success-gone">
           <div class="alert alert-danger">
             <%- error%>
-
           </div>
-
-
         </div>
         <% } %>
         <input type="submit" class="btn col-md-12" value="SignIn" />
@@ -34,5 +28,4 @@
       </div>
     </div>
   </form>
-
 </div>

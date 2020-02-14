@@ -14,7 +14,6 @@ app.use(session({
   secret: 'Smart Bin',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: true }
 }))
 
 // view engine setup

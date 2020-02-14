@@ -6,14 +6,11 @@
         <div class="panel box-v1">
             <div class="panel-heading bg-white border-none">
                 <div class="col-md-12 text-left padding-0">
-                    <h1 class="text-left">Truck Details</h1>
+                    <h1 class="text-center" style="text-transform: uppercase;">Truck Details</h1>
                 </div>
 
             </div>
             <div class="panel-body text-left">
-                <h3>Truck ID</h3>
-                <h4> <%= truck.val().id%></h4>
-                <hr />
                 <h3>Registration Number</h3>
                 <h4> <%= truck.val().registrationNumber%></h4>
                 <hr />
@@ -22,7 +19,8 @@
                 <hr />
                 <h3>Model</h3>
                 <h4> <%= truck.val().truckModel%></h4>
-
+                <br />
+                <a href="/admin/edittruck?id=<%= truck.val().id%>" class="btn btn-warning btn-block">Edit</a>
             </div>
         </div>
     </div>
@@ -30,13 +28,13 @@
         <div class="panel box-v1">
             <div class="panel-heading bg-white border-none">
                 <div class="col-md-12 col-sm-12 col-xs-12 text-left padding-0">
-                    <h1 class="text-left">Driver Details</h1>
+                    <h1 class="text-center" style="text-transform: uppercase;">Driver Details</h1>
                 </div>
 
             </div>
             <div class="panel-body text-left" style="padding-top: 10px ;">
                 <h3>Name</h3>
-                <h4> <%= driver.val().name%></h4>
+                <h4> <%= driver.val().firstName%> <%= driver.val().lastName%></h4>
                 <hr />
                 <h3>Driver ID</h3>
                 <h4> <%= driver.val().id%></h4>
@@ -45,7 +43,7 @@
                 <h4> <%= driver.val().email%></h4>
                 <hr />
                 <h3>Lisence Number</h3>
-                <h4> <%= driver.val().lisenceNumber%></h4>
+                <h4> <%= driver.val().licenseNumber%></h4>
                 <hr />
                 <h3>Phone Number</h3>
                 <h4> <%= driver.val().phoneNumber%></h4>
